@@ -1,0 +1,124 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GMS :: Signup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="resources/css/jquery.growl.css" rel="stylesheet">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+<script src="resources/js/lib/jquery.growl.js"></script>
+<script src="resources/js/jquery.cookie.js"></script>
+
+<script src="resources/js/core/gms.js"></script>
+<script src="resources/js/core/gms-util.js"></script>
+<script src="resources/js/core/gms-model.js"></script>
+<script src="resources/js/core/gms-data.js"></script>
+<script src="resources/js/core/gms-ui-registration.js"></script>
+
+<style type="text/css">
+/*-----Background-----*/
+body {
+	background-image: url(https://s3.envato.com/files/243754334/primag.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+}
+
+/*-----for border----*/
+.container {
+	font-family: Roboto, sans-serif;
+	background-color: white;
+	border-style: 1px solid grey;
+	margin: 0 auto;
+	text-align: center;
+	opacity: 0.8;
+	margin-top: 67px;
+	box-shadow: 2px 5px 5px 0px #eee;
+	max-width: 500px;
+	padding-top: 10px;
+	height: auto;
+	margin-top: 166px;
+}
+
+.heading {
+	text-decoration: bold;
+	text-align: center;
+	font-size: 30px;
+	color: #F96;
+	padding-top: 10px;
+}
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<!---heading---->
+		<header class="heading">User Registration</header>
+		<hr></hr>
+		<!---Form starting---->
+		<form id="gms_registration_form" data-toggle="validator" role="form">
+			<div class="form-group has-feedback">
+				<label for="name" class="control-label">Name</label> <input
+					type="text" class="form-control" id="name"
+					placeholder="Enter your name" required>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors"></div>
+			</div>
+			
+			<div class="form-group has-feedback">
+				<label for="address" class="control-label">Address</label> <input
+					type="text" class="form-control" id="address"
+					placeholder="Enter your name" required>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors"></div>
+			</div>
+			
+			<div class="form-group has-feedback">
+				<label for="mobile" class="control-label">Mobile</label>
+				<input type="number" data-minlength="10" data-maxlength="11" class="form-control"
+						id="mobile" placeholder="Mobile number" required>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors"></div>
+			</div>
+			<div class="form-group">
+				<label for="email" class="control-label">Email</label> <input
+					type="email" class="form-control" id="email"
+					placeholder="Email"
+					data-error="Bruh, that email address is invalid" required>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors"></div>
+			</div>
+			<div class="form-group">
+				<label for="password" class="control-label">Password</label>
+				<div class="form-inline row">
+					<div class="form-group col-sm-6">
+						<input type="password" data-minlength="6" class="form-control"
+							id="password" placeholder="Password" required>
+						<div class="help-block">Minimum of 6 characters</div>
+					</div>
+					<div class="form-group col-sm-6">
+						<input type="password" class="form-control"
+							id="passwordConfirm" data-match="#password"
+							data-match-error="Whoops, these don't match"
+							placeholder="Confirm" required>
+						<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

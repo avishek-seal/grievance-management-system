@@ -1,0 +1,88 @@
+<div class="card-body">
+	<div style="display: block;
+    width: 100%;
+    height: 10px;
+    margin-top: 20px;">
+		<h3 class="card-title" style="float: left;">Your Grievances</h3>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#grievance_modal" style="float: right">
+		  I have a grievance
+		</button>
+	</div>
+	
+	<table id="my_grievances" class="cell-border compact stripe">
+		<thead>
+			<tr>
+				<th>Grievance Id</th>
+				<th>Summary</th>
+				<th>Respondent</th>
+				<th>Date</th>
+				<th>Comments</th>
+			</tr>
+		</thead>
+		<tbody>
+		
+		</tbody>
+	</table>
+
+</div>
+
+<div class="modal" id="view_details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="view_details_title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="grievance_details" class="modal-body">
+        
+      </div>
+      <div class="modal-footer" style="justify-content: flex-start;">
+        <b class="modal-title" id="view_details_summary"></b>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="grievance_modal" tabindex="-1" role="dialog"
+	aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Submit A
+					Grievance</h5>
+				<button type="button" class="close" data-toggle="modal" data-target="#exampleModal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group has-feedback">
+					<label for="summary" class="control-label">Summary</label> <input
+						type="text" class="form-control" id="summary"
+						placeholder="Enter the summary" required>
+				</div>
+
+				<div class="form-group has-feedback">
+					<label for="respondent" class="control-label">Respondent</label> <input
+						type="text" class="form-control" id="respondent"
+						placeholder="Enter the respondent" required>
+				</div>
+
+				<div class="form-group has-feedback">
+					<label for="description" class="control-label">Description</label>
+					<textarea
+						cols="40" rows="10"
+						class="form-control" id="description" placeholder="What happend?"
+						required style="height: 100px;"></textarea>
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<button id="close_modal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button id="save_grievance" type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>

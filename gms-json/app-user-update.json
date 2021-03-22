@@ -1,0 +1,47 @@
+{
+        "_id": "5a9813c07d6f59178034080c",
+        "updated": "2018-03-02T16:50:10.273Z",
+        "created": "2018-03-01T14:52:48.070Z",
+        "gender": "M",
+        "age": 28,
+        "status": true,
+        "__v": 9,
+        "family": [
+            {
+                "gender": "F",
+                "age": 22,
+                "_id": "5a9813c07d6f59178034080d",
+                "name": {
+                    "first": "AAA",
+                    "middle": null,
+                    "last": "BBB"
+                }
+            }
+        ],
+        "address": [
+            {
+                "place": "HOME",
+                "city": "Kolkata",
+                "pin": "700011",
+                "street": "44/3 Chaul Patty Road",
+                "_id": "5a9813c07d6f59178034080e",
+                "location": {
+                    "lat": "88.36",
+                    "lon": "22.24"
+                }
+            }
+        ],
+        "name": {
+            "last": "Seal",
+            "middle": "",
+            "first": "Avishek"
+        },
+        "email": {
+            "verified": true,
+            "id": "avishek.seal.90@gmail.com"
+        },
+        "mobile": {
+            "verified": true,
+            "number": "8981497646"
+        }
+    }

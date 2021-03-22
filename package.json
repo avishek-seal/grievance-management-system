@@ -1,0 +1,27 @@
+{
+		"name": "grievance-management-system",
+		"version": "0.0.1",
+		"private": true,
+		"scripts": {
+				"start": "node app.js"
+		},
+		"dependencies": {
+				"bcryptjs": "^2.3.0",
+				"consolidate": "^0.15.1",
+				"crypto-js": "^3.1.9-1",
+				"express": "3.2.6",
+				"jsonwebtoken": "^7.1.9",
+				"mailgun-js": "^0.20.0",
+				"mongoose": "^4.6.8",
+				"mongoose-paginate": "^5.0.3",
+				"multer": "^1.2.0",
+				"nodemailer": "^4.6.2",
+				"random-number": "0.0.9",
+				"redis": "^2.6.3",
+				"rmdir": "^1.2.0",
+				"routes": "^2.1.0",
+				"sendmail": "^1.4.1",
+				"swig": "^1.4.2",
+				"textbelt": "0.0.3"
+		}
+}

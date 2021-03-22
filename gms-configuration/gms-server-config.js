@@ -1,0 +1,18 @@
+/**
+ * http://usejsdoc.org/
+ */
+
+exports.DEV_SERVER = {
+	APPLICATION_PORT : 3000,
+	CMS_PORT : 3010
+}
+
+exports.QA_SERVER = {
+	APPLICATION_PORT : 3000,
+	CMS_PORT : 3010
+}
+
+exports.PRODUCTION_SERVER = {
+	APPLICATION_PORT : 3000,
+	CMS_PORT : 3010
+}

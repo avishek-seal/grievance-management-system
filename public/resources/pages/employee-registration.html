@@ -1,0 +1,242 @@
+<div class="row justify-content-center">
+	<div class="col-lg-12">
+		<div class="card">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs profile-tab" role="tablist">
+				<li class="nav-item"><a class="nav-link active"
+					data-toggle="tab" href="#profile_basic" role="tab">Basic Info</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab"
+					href="#personal_info" role="tab">Personal Info</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab"
+					href="#professional_info" role="tab">Professional Info</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab"
+					href="#contact_info" role="tab">Contact Info</a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-pane active" id="profile_basic" role="tabpanel">
+					<div class="card-body">
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="username">Username
+								<span class="text-danger">*</span>
+							</label>
+							<div class="col-lg-6">
+								<input type="text" class="form-control" id="username"
+									name="username" placeholder="Enter a username..">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="email">Email
+								<span class="text-danger">*</span>
+							</label>
+							<div class="col-lg-6">
+								<input type="text" class="form-control" id="email" name="email"
+									placeholder="Your valid email..">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="cofirm_password">Password
+								<span class="text-danger">*</span>
+							</label>
+							<div class="col-lg-6">
+								<input type="password" class="form-control" id="password"
+									name="password" placeholder="Choose a safe one..">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="confirm-password">Confirm
+								Password <span class="text-danger">*</span>
+							</label>
+							<div class="col-lg-6">
+								<input type="password" class="form-control"
+									id="confirm-password" name="confirm-password"
+									placeholder="..and confirm it!">
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--second tab-->
+				<div class="tab-pane" id="personal_info" role="tabpanel">
+					<div class="card-body">
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="first_name">First
+								Name <span class="text-danger">*</span>
+							</label>
+							<div class="col-lg-6">
+								<input type="text" class="form-control" id=first_name name="first_name"
+									placeholder="Enter Firstname">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="middle_name">Middle
+								Name <span class="text-danger">*</span>
+							</label>
+							<div class="col-lg-6">
+								<input type="text" class="form-control" id="middle_name" name="middle_name"
+									placeholder="Enter middlename">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="last_name">Last
+								Name <span class="text-danger">*</span>
+							</label>
+							<div class="col-lg-6">
+								<input type="text" class="form-control" id="last_name" name="last_name"
+									placeholder="Enter Lastname">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="gender">Gender
+								<span class="text-danger">*</span>
+							</label>
+							<div class="col-lg-6">
+								<div class="card-toggle-body">
+                                <div class="button-list">
+                                    <div class="btn-group">
+                                        <button type="button" data-gender="m" class="btn btn-default">Male</button>
+                                        <button type="button" data-gender="f" class="btn btn-default">Female</button>
+                                    </div>
+                                </div>
+                            </div>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-lg-4 col-form-label" for="dob">Date of Birth
+								<span class="text-danger">*</span>
+							</label>
+							<div class="input-group date col-lg-6" data-provide="datepicker">
+							    <input type="text" class="form-control" readonly="readonly" id="dob">
+							    <div class="input-group-addon">
+							        <span class="glyphicon glyphicon-th"></span>
+							    </div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="tab-pane" id="professional_info" role="tabpanel">
+					<div class="card-body">
+						<form class="form-horizontal form-material">
+							<div class="form-group row">
+								<label class="col-lg-4 col-form-label" for="company_name">Company
+									Name <span class="text-danger">*</span>
+								</label>
+								<div class="col-lg-6">
+									<input type="text" class="form-control" id="company_name"
+										name="company_name" placeholder="Company Name">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label class="col-lg-4 col-form-label" for="joining_date">Joining
+									Date <span class="text-danger">*</span>
+								</label>
+								<div class="input-group date col-lg-6" data-provide="datepicker">
+							    <input type="text" class="form-control" readonly="readonly" id="joining_date">
+							    <div class="input-group-addon">
+							        <span class="glyphicon glyphicon-th"></span>
+							    </div>
+							</div>
+							</div>
+
+							<div class="form-group row">
+								<label class="col-lg-4 col-form-label" for="designation">Designation
+									<span class="text-danger">*</span>
+								</label>
+								<div class="col-lg-6">
+									<input type="text" class="form-control" id="designation"
+										name="designation" placeholder="Designation">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label class="col-lg-4 col-form-label" for="leaving_date">Leaving
+									Date <span class="text-danger">*</span>
+								</label>
+								<div class="input-group date col-lg-6" data-provide="datepicker">
+								    <input type="text" class="form-control" readonly="readonly" id="leaving_date">
+								    <div class="input-group-addon">
+								        <span class="glyphicon glyphicon-th"></span>
+								    </div>
+								</div>
+							</div>
+
+
+						</form>
+					</div>
+				</div>
+
+				<div class="tab-pane" id="contact_info" role="tabpanel">
+					<div class="card-body">
+						<form class="form-horizontal form-material">
+							<div class="card-body">
+								<div class="form-validation">
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label" for="phone_number">Phone
+											Number <span class="text-danger">*</span>
+										</label>
+										<div class="col-lg-6">
+											<input type="text" class="form-control" id="phone_number"
+												name="phone_number" placeholder="033-9999-0000">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label" for="mobile_number">Mobile
+											Number <span class="text-danger">*</span>
+										</label>
+										<div class="col-lg-6">
+											<input type="text" class="form-control" id="mobile_number"
+												name="mobile_number" placeholder="91-9999-9999-99">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label" for="address">Address
+											<span class="text-danger">*</span>
+										</label>
+										<div class="col-lg-6">
+											<textarea class="form-control" id="address"
+												name="address" rows="5" placeholder="Address"></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label" for="city">City
+											<span class="text-danger">*</span>
+										</label>
+										<div class="col-lg-6">
+											<input type="text" class="form-control" id="city"
+												name="city" placeholder="City..">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label" for="pin">Pin
+											<span class="text-danger">*</span>
+										</label>
+										<div class="col-lg-6">
+											<input type="text" class="form-control" id="pin"
+												name="pin" placeholder="pin code">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<div class="col-lg-8 ml-auto">
+											<button type="submit" class="btn btn-primary">Submit</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
